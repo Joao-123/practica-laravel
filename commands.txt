@@ -1,4 +1,4 @@
-crear oriyecto:
+crear proyecto:
 composer create-proyect laravel/laravel name --prefer-dist -> ultima version de laravel
 composer create-proyect laravel/laravel name 7.0 ->  version 7.0 de laravel
 laravel new nombre_project
@@ -39,3 +39,13 @@ php artisan tinker -> para salir -> exit + enter
 
 cargar datos desde seeder:
 php artisan db:seed
+
+crear seeder:
+php artisan make:seeder NombreSeeder
+
+rejecutar migraciones y llenar datos seeder:
+php artisan migrate:fresh --seed
+
+crear factory para datos:
+php artisan make:factory NameFactory -> en mi version lo mapea directamente
+php artisan make:factory NameFactory --model=Curso
